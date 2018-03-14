@@ -1,0 +1,29 @@
+/* Center Align */
+.center {
+    align-content: center;
+    text-align: center;
+}
+
+/* Jumbotron Styling */
+.jumbostyle {
+    background-color: rgb(115, 110, 192);
+    border-radius: 10px;
+    margin: 40px;
+
+}
+
+.margin {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+body {
+    background-image:
+    radial-gradient(
+      circle,
+      rgb(255, 255, 255),
+      rgb(236, 241, 255)
+    );
+
+}
