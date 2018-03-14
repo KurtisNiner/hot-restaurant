@@ -33,7 +33,7 @@ var reservations = [
     }
    ];
 
-   var reservations = [
+   var waitlist = [
     {
       name: "elena",
       phoneNumber: "555-1928",
