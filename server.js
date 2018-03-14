@@ -10,6 +10,7 @@ var PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+console.log("listening on http://localhost:" + PORT);
 
 var reservations = [
     {
@@ -23,13 +24,13 @@ var reservations = [
       name: "jess",
       phoneNumber: "555-3490",
       email: "Jedi@Master",
-      uniqueID: idid0,
+      uniqueID: 898343,
     },
     {
       name: "kevin",
       phoneNumber: "555-1234",
       email: "Jedi@Master.net",
-      uniqueID: kevin,
+      uniqueID: 9080,
     }
    ];
 
@@ -45,13 +46,13 @@ var reservations = [
       name: "jess",
       phoneNumber: "555-3490",
       email: "Jedi@Master",
-      uniqueID: idid0,
+      uniqueID: 348934,
     },
     {
       name: "kevin",
       phoneNumber: "555-1234",
       email: "Jedi@Master.net",
-      uniqueID: kevin,
+      uniqueID: 423324,
     }
    ];
 
