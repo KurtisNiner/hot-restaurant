@@ -1,27 +1,63 @@
-// Require/import the HTTP module
+
 var http = require("http");
 var bodyParser = require("body-parser");
 var express = require("express");
 var path = require('path')
 
-// Define a port to listen for incoming requests
-// all-caps means its a constant, not a variable (event though it's declared as var)
-var PORT = 5000;
+var app = express();
 
-// Create a generic function to handle requests and responses
-function handleRequest(request, response) {
+var PORT = process.env.PORT || 3000;
 
-  // Send the below string to the client when the user visits the PORT URL
-  response.end("It Works!! Path Hit: " + request.url);
-}
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-// Use the Node HTTP package to create our server.
-// Pass the handleRequest function to empower it with functionality.
-var server = http.createServer(handleRequest);
+var reservations = [
+    {
+      name: "elena",
+      phoneNumber: "555-1928",
+      email: "Jedi@Master",
+      uniqueID: 900,
+      
+    },
+    {
+      name: "jess",
+      phoneNumber: "555-3490",
+      email: "Jedi@Master",
+      uniqueID: idid0,
+    },
+    {
+      name: "kevin",
+      phoneNumber: "555-1234",
+      email: "Jedi@Master.net",
+      uniqueID: kevin,
+    }
+   ];
 
-// Start our server so that it can begin listening to client requests.
-server.listen(PORT, function() {
+   var reservations = [
+    {
+      name: "elena",
+      phoneNumber: "555-1928",
+      email: "Jedi@Master",
+      uniqueID: 900,
+      
+    },
+    {
+      name: "jess",
+      phoneNumber: "555-3490",
+      email: "Jedi@Master",
+      uniqueID: idid0,
+    },
+    {
+      name: "kevin",
+      phoneNumber: "555-1234",
+      email: "Jedi@Master.net",
+      uniqueID: kevin,
+    }
+   ];
 
-  // Log (server-side) when our server has started
-  console.log("Server listening on: http://localhost:" + PORT);
+
+
+app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "home.html"));
 });
+
