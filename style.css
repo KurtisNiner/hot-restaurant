@@ -7,7 +7,6 @@
 /* Jumbotron Styling */
 .jumbostyle {
     margin-top: 40px;
-
 }
 
 .margin {
@@ -25,6 +24,20 @@ body {
       rgb(131, 129, 224)
     );
 
+}
+
+a {
+    color: rgb(207, 103, 62);
+}
+
+a:hover {
+    color: rgb(185, 66, 23);
+}
+
+
+.border {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 hr {
@@ -47,4 +60,8 @@ hr {
 .btn:focus, .btn:active:focus, .btn.active:focus {
     background-color: rgb(185, 66, 23);
     border-color: rgb(185, 66, 23);
+}
+
+.footer-copyright {
+    margin-bottom: 8px;
 }
