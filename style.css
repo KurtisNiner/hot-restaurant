@@ -65,3 +65,9 @@ hr {
 .footer-copyright {
     margin-bottom: 8px;
 }
+
+/* Scrolling pi text string */
+.piString {
+    margin-left: 40px;
+    margin-right: 40px;  
+}
